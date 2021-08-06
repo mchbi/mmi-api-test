@@ -2,7 +2,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route('/push', methods=['POST'])
+@app.route('/push', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
         return 'hello'
