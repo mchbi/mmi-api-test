@@ -4,4 +4,7 @@ app = Flask(__name__)
 
 @app.route('/push', methods=['POST'])
 def index():
-    print(request.json)
+    if request.method == 'GET':
+        return 'hello'
+    else:
+        return request.json
