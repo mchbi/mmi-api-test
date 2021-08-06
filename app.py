@@ -8,3 +8,6 @@ def index():
         return 'hello'
     else:
         return request.json
+
+if __name__ == "__main__":
+    app.run()
