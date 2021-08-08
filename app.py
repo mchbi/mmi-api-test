@@ -7,6 +7,7 @@ def index():
     if request.method == 'GET':
         return 'hello'
     else:
+        print(request.json)
         return request.json
 
 if __name__ == "__main__":
