@@ -11,7 +11,7 @@ def index():
         return request.json
 
 @app.route('/hydropro', methods=['GET', 'POST'])
-def index():
+def hydropro():
     if request.method == 'GET':
         return 'hello'
     else:
